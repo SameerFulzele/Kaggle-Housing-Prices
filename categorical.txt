@@ -1,0 +1,155 @@
+OverallCond: Rates the overall condition of the house ()
+OverallQual: Rates the overall material and finish of the house 
+1stFlrSF: First Floor square feet 
+BsmtCond: Evaluates the general condition of the basement (Because every house has basement here)
+TotalBsmtSF: Total square feet of basement area
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
+Bedroom: Bedrooms above grade (does NOT include basement bedrooms)(reject)
+Kitchen: Kitchens above grade(reject)
+KitchenQual: Kitchen quality
+FullBath: Full bathrooms above grade
+RoofStyle: Type of roof
+Foundation: Type of foundation
+HeatingQC: Heating quality and condition
+CentralAir: Central air conditioning
+
+
+
+LotFrontage: Linear feet of street connected to property()(group it then)
+Neighborhood: Physical locations within Ames city limits
+Condition1: Proximity to various conditions
+Condition2: Proximity to various conditions (if more than one is present)
+Street: Type of road access to property (Nominal one hot)
+
+
+
+YearBuilt: Original construction date
+YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)
+MoSold: Month Sold (MM)
+YrSold: Year Sold (YYYY)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Condition and Date: 
+
+YearBuilt: Original construction date
+YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)
+MoSold: Month Sold (MM)
+YrSold: Year Sold (YYYY)
+
+MSSubClass: Identifies the type of dwelling involved in the sale.
+BldgType: Type of dwelling	
+HouseStyle: Style of dwelling
+OverallQual: Rates the overall material and finish of the house
+OverallCond: Rates the overall condition of the house
+SaleType: Type of sale
+SaleCondition: Condition of sale
+
+
+
+AREA: 
+MSZoning: Identifies the general zoning classification of the sale.(Can be droppped)
+LotFrontage: Linear feet of street connected to property(8.2)(group it then)
+LotArea: Lot size in square feet
+LotShape: General shape of property (Dont use it)
+LotConfig: Lot configuration
+Street: Type of road access to property (Nominal one hot)
+Alley: Type of alley access to property
+LandContour: Flatness of the property
+Neighborhood: Physical locations within Ames city limits
+Condition1: Proximity to various conditions
+Condition2: Proximity to various conditions (if more than one is present)
+
+
+
+
+
+
+
+
+
+
+HOUSE EXTERNAL:
+RoofStyle: Type of roof
+RoofMatl: Roof material
+Exterior1st: Exterior covering on house
+Exterior2nd: Exterior covering on house (if more than one material)
+MasVnrType: Masonry veneer type
+MasVnrArea: Masonry veneer area in square feet
+ExterQual: Evaluates the quality of the material on the exterior 
+ExterCond: Evaluates the present condition of the material on the exterior
+Foundation: Type of foundation
+BsmtQual: Evaluates the height of the basement
+BsmtCond: Evaluates the general condition of the basement
+BsmtExposure: Refers to walkout or garden level walls
+BsmtFinType1: Rating of basement finished area
+BsmtFinSF1: Type 1 finished square feet
+BsmtFinType2: Rating of basement finished area (if multiple types)
+BsmtFinSF2: Type 2 finished square feet
+BsmtUnfSF: Unfinished square feet of basement area
+TotalBsmtSF: Total square feet of basement area
+
+
+HOUSE INTERNAL: 
+Functional: Home functionality (Assume typical unless deductions are warranted)
+Utilities: Type of utilities available
+Heating: Type of heating
+HeatingQC: Heating quality and condition
+CentralAir: Central air conditioning
+Electrical: Electrical system
+1stFlrSF: First Floor square feet 
+2ndFlrSF: Second floor square feet
+LowQualFinSF: Low quality finished square feet (all floors)
+GrLivArea: Above grade (ground) living area square feet
+BsmtFullBath: Basement full bathrooms
+BsmtHalfBath: Basement half bathrooms
+FullBath: Full bathrooms above grade
+HalfBath: Half baths above grade
+Bedroom: Bedrooms above grade (does NOT include basement bedrooms)
+Kitchen: Kitchens above grade
+KitchenQual: Kitchen quality
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
+
+
+EXTRA HOUSE FEATURE:
+
+Fireplaces: Number of fireplaces(Numerical)
+FireplaceQu: Fireplace quality(Ordinal)
+
+GarageType: Garage location (Nominal)
+GarageYrBlt: Year garage was built () 
+GarageFinish: Interior finish of the garage (Ordinal)
+GarageCars: Size of garage in car capacity (Num)
+GarageArea: Size of garage in square feet (Num)(can be grouped)
+GarageQual: Garage quality (Ordinal)
+GarageCond: Garage condition (Ordinal)
+PavedDrive: Paved driveway(Nominal)
+
+
+WoodDeckSF: Wood deck area in square feet
+OpenPorchSF: Open porch area in square feet
+EnclosedPorch: Enclosed porch area in square feet
+3SsnPorch: Three season porch area in square feet
+ScreenPorch: Screen porch area in square feet
+
+PoolArea: Pool area in square feet (Numerical)
+PoolQC: Pool quality (Ordinal with assigning No feature= 0)
+Fence: Fence quality quality (Ordinal)
+MiscFeature: Miscellaneous feature not covered in other categories (Nominal)
+
+Drop
+MiscVal: $Value of miscellaneous feature train.MiscVal.unique()
+Out[45]: 
+array([    0,   700,   350,   500,   400,   480,   450, 15500,  1200,
+         800,  2000,   600,  3500,  1300,    54,   620,   560,  1400,
+        8300,  1150,  2500], dtype=int64)
